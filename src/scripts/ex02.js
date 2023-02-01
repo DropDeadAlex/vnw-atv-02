@@ -1,3 +1,3 @@
-import { log } from "./consolog"
+const imprimeNome = console.log.bind(console)
 
-log("novo teste de log")
+imprimeNome("Alex")
