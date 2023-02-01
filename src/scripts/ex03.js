@@ -1,11 +1,11 @@
 import { log } from "./consolog"
 
 const exibeDados = ({ nome, idade, genMusical }) => {
-  const dados = "".concat(
-    `Nome: ${nome}\n`,
-    `Idade: ${idade}\n`,
+  const dados = [
+    `Nome: ${nome}`,
+    `Idade: ${idade}`,
     `Gênero Musical: ${genMusical}`
-  )
+  ].join("\n")
 
   log(dados)
 }
